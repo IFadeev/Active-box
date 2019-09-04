@@ -190,3 +190,67 @@ p {
 
 /*==========/*FEATURES/*==========*/
 
+
+
+
+/*==========WORKS==========*/
+.works {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works__item {
+  position: relative;
+  width: 25%;
+  height: 350px;
+  overflow: hidden;
+
+  border: 0.5px solid #fff;
+}
+
+.works__photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 1;
+}
+.works__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(232, 69, 69, 0.9);
+
+  transition: opacity 0.2s linear;
+}
+
+.works__content:hover {
+  opacity: 1;
+}
+
+.works__title, .works__text {
+  font-size: 14px;  
+  color: #fff;
+  
+}
+
+.works__title {
+  margin-bottom: 5px;
+  font-weight: 700;
+  text-transform: uppercase; 
+}
+
+.works__text {
+  text-transform: capitalize;
+}
+
+/*==========/*WORKS/*==========*/
+
